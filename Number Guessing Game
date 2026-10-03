@@ -1,0 +1,25 @@
+print("THE NUMBER GUESSING GAME") #The Title
+
+import random
+number= random.randint(1,10)
+attempts=0
+guess=0
+
+while guess != number:
+    guess=int(input("WHAT IS YOUR GUESS?"))
+    attempts=attempts+1
+    
+    if guess== number:
+        print("CONGRATULATIONS!!! YOU MADE IT")
+
+    elif guess==number-1:
+        print("LITTLE HIGHER")
+    elif guess==number+1:
+        print("LITTLE LOWER")
+    elif guess<number:
+        print("HIGHER")
+    elif guess>number:
+        print("LOWER")
+        
+print(f"You got it in {attempts} Attempts. GREAT WORK!")
+    
