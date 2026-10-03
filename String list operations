@@ -1,0 +1,23 @@
+name= "  riya sharma       "    
+subjectss= "Math, Science, English, Math, Python"  
+bio = "riya loves science and math"
+
+print(name.strip().upper())   
+subject=subjectss.split(", ")  
+print("Total Subjects are:" , len(subject)) 
+
+subject.remove("Science")
+print(subject)  
+
+subject.sort()
+print(subject)  
+
+print("Math is" , subject.count("Math") , "times in the subjects")  
+
+print(subjectss.replace("Math", "Mathematics"))  
+
+print("Python" in bio)  
+
+
+
+
