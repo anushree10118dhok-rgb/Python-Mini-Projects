@@ -1,0 +1,30 @@
+# Created by Anushree Dhok
+print("HEY THERE! THIS IS YOUR PERSONAL BIOCARD")
+print("Please spare some time and give us the following details")
+
+#Taking Personal info questions from user
+Name=input("What is your Name?")
+Age=int(input("What is your Age?"))
+Profession=input("What is your Profession?")
+City=input("Where do you live?")
+
+#Asking lucky Numbers
+print("Give me your 2 lucky numbers")
+a=int(input("Your First Number:")) 
+b=int(input("Your Second Number:"))
+
+#Printing bio
+print(f"Hello, My name is {Name}")
+if Age<=18:
+    print(f"I am a teenager of {Age} years old")
+elif Age<=25:
+    print(f"I am a young adult of {Age} years old")
+elif Age<=55:
+    print(f"I am an Adult of {Age} years old")
+else:
+    print(f"I am a Senior Citizen of {Age} years old")
+    
+print(f"I live in {City} & I am a {Profession}")
+
+#Printing the maths result
+print(f"Sum:{a+b} | Difference:{a-b} | Product:{a*b} | Division:{a/b}")
